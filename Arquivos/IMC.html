@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cálculo do IMC</title>
+		<meta charset="utf-8">
+        <script src="imcfunc.js"></script>
+     <link rel="stylesheet" type="text/css" href="imcEstilo.css">
+	</head>
+	<body>
+		<div id="areaContas">
+			<h1>CÁLCULO DO IMC</h1>
+			<label>Peso (Kgs):</label>
+			<input type="number" id="peso" placeholder="72,50"> <br>
+			
+			<label>Altura (Mts):</label>
+			<input type="number" id="altura" placeholder="1,66"> <br>
+			
+			<input type="button" value="CALCULAR" onclick="Calcular()">
+			
+			<hr>
+			<label>IMC:</label>
+			<input type="text" id="IMC" readonly> <br>
+			<label>Situação:</label>
+			<p id="situacao"></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+label { 
+    width:150px;
+    float:left;
+}
+h1, p {color:navy;}
+input {text-align:right; color:navy;}
+body { 
+    background:url(https://cdn.pixabay.com/photo/2017/04/25/20/18/sport-2260736_960_720.jpg);
+    background-size:cover;
+}
+#areaContas {
+    width:400px;
+    border:2px solid navy;
+    border-radius:20%;
+    background-color: rgba(255,255,255,0.60);
+    margin:20px auto;
+    padding:30px;
+}
