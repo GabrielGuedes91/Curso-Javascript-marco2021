@@ -1,0 +1,34 @@
+/* salvar como viagem.css*/
+
+body { background:url(imgs/hands.jpeg);
+	  
+	   background-size:cover;
+	   text-align:center;
+	}
+
+#areaCartas { 
+	margin-top:50px;
+	text-align:center;
+}
+
+.cartas { 
+	left:0px;
+	position:relative;
+	top:0px;
+	width:120px;
+}
+
+#resultado {
+	 text-align:center;
+     
+}
+
+#conteudo {
+	    opacity: 85%;
+		border: 15px ridge LightCyan;
+		background-image: linear-gradient(white 5%, PowderBlue);
+		margin-left:30px;
+		width:1500px;
+}
+
+h1 { color: goldenrod;}
