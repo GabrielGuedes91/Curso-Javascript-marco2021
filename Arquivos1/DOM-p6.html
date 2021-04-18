@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- salvar como DOM-p6.html -->
+<html lang="pt-br">
+	<head>
+		<title>DOM – Parágrafo e spans</title>
+		<meta charset="utf-8">
+		<script src="DOM-p6.js"></script>
+		<style>
+		  body{
+			background:url(raposaFundo.jpg);
+			background-size:cover;
+		  }
+		  p { color  : black ;}
+		  #span1 {color : blue ;}
+		  #span2 {color : red ;}
+		  #span3 {color : magenta;}
+		  
+		  #areaConteudo {
+		   opacity: 90%;
+		   border: 1px solid orange;
+		   width: 550px;
+		   padding: 10px 30px 10px 30px;
+		   margin-top: 100px;
+		   margin-left: 700px;
+		   border-radius:10%;
+		   background-image: linear-gradient(white 5%, orange);
+		   	   }
+		  #frase {
+			border: 1px solid orange;
+			border-radius:40%;
+			background-color:white;
+			padding: 10px;
+		  }
+		  
+		</style>
+	</head>
+	<body>
+		<div id="areaConteudo">
+			<div id="frase">
+				
+				<p><b>Frase: </b>A raposa <span id="span1">descansava</span> 
+					<span id="span2">à beira da 
+					lagoa</span> quando 
+					<span id="span3">escutou o latido de cães</span>.
+				</p>
+			</div>
+		<h2>AÇÕES DA RAPOSA</h2>
+		<select onchange="mudarAcao(this)" >
+		   <option>descansava</option>
+		   <option>escondia-se</option>
+		   <option>observava</option>
+		   <option>espreitava</option>
+		   <option>espreguiçava-se</option>
+		</select>
+		
+		<br><br><br>
+		<b>Em que local? </b> <br>
+
+		<input type="text" id="local" size="50"
+			   placeholder="Digite o local aqui">
+		
+		<input type ="button" value="Alterar Local" onclick="alterarLocal()">
+		<hr>
+		<h2>Parágrafos prontos (passe o mouse)</h2>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">escutou o latido de cães</p>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">percebeu o grasnar de aves</p>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">ouviu o chamado de seu dono</p>
+		<p onmouseover="reacaoRaposa(this.innerHTML)">sentiu a chuva chegando</p>
+		</div>
+		
+		
+	</body>
+</html>
